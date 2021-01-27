@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Stone - Elixir</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <section>
+                    Método com documentos separados
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                        <label class="custom-file-label" for="validatedCustomFile">Arquivo com os nomes e e-mail</label>
+                        <!-- <div class="invalid-feedback">Exemplo de feedback inválido para input file</div> -->
+                    </div>
+                    <div class="custom-file mt-3">
+                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                        <label class="custom-file-label" for="validatedCustomFile">Arquivo com os produtos</label>
+                        <!-- <div class="invalid-feedback">Exemplo de feedback inválido para input file</div> -->
+                    </div>
+                </section>
+                <section class="mt-5">
+                    Método com documento único
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                        <label class="custom-file-label" for="validatedCustomFile">Selecione o arquivo</label>
+                        <!-- <div class="invalid-feedback">Exemplo de feedback inválido para input file</div> -->
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">Valor de participação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="badyTableNames">
+                    </tbody>
+                </table>
+                <table class="table mt-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Qtd</th>
+                            <th scope="col">valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="badyTableProducts">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="docs/list.js"></script>
+    <script src="assets/js/index.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+</body>
+</html>
